@@ -1,0 +1,48 @@
+body {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+.container-padding50 {
+	padding-top: 50px;
+}
+
+.container-textinput {
+	width: 80%;
+	display: inline-block;
+	padding: 20px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+}
+
+.container-button {
+	width: 10%;
+	display: inline-block;
+	padding: 20px;
+	background-color: rgb(0, 91, 218);
+	color: white;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+
+	border: 1px solid rgb(0, 91, 218);
+	border-radius: 5px;
+}
+
+.container-image {
+	width: 30%;
+	display: block;
+	float: left;
+	margin-right:3%;
+}
+
+.h{
+	color:rgb(0, 91, 218);
+	text-align: center;
+	/* padding: 10px; */
+	border: 5px ;
+	border-color: red green pink yellow;
+	border-radius: 50%;
+	border-style: dashed dotted solid double;
+}
