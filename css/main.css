@@ -42,7 +42,6 @@ body {
 	text-align: center;
 	/* padding: 10px; */
 	border: 5px ;
-	border-color: red green pink yellow;
-	border-radius: 50%;
-	border-style: dashed dotted solid double;
+	border-color: red;
+	border-style: dashed ;
 }
