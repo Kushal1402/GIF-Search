@@ -1,5 +1,4 @@
 /* 1.) Grab the input value */
-
 document.querySelector(".js-go").addEventListener("click", function () {
     //alert("testing!!"); by pressing Go! button
 
@@ -78,3 +77,24 @@ function pushToDOM(response) {
     // container.innerHTML =   "<img src = \" "+ imageUrl +" \">";
 
 }
+
+/* On page load call the trending API */
+function getTrendingGif() {
+    var url = "https://api.giphy.com/v1/gifs/trending?api_key=4a80JZkB1g5E4N1OkwhqhvUFsY27XcLJ";
+
+    // AJAX Request
+    var GiphyAJAXCall = new XMLHttpRequest();
+    GiphyAJAXCall.open('GET', url);
+    GiphyAJAXCall.send();
+
+
+    GiphyAJAXCall.addEventListener('load', function (data) {
+
+        // your callback events go here 
+        var actualData = data.target.response;
+        //console.log(data);
+        pushToDOM(actualData);
+        console.log(actualData);
+    });
+}
+window.onload = getTrendingGif();
